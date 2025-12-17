@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Inter:wght@300;600&display=swap');
+
+:root{
+	--bg-1: #0f1724;
+	--bg-2: #1b2430;
+	--accent-1: #7dd3fc;
+	--accent-2: #f472b6;
+	--card: rgba(255,255,255,0.06);
+}
+
+*{box-sizing: border-box}
+html,body,#root{height:100%;}
+body{
+	margin:0;
+	font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	background: radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,0.12), transparent),
+							linear-gradient(135deg,var(--bg-1),var(--bg-2));
+	color: #e6eef8;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+
+.app-center{
+	min-height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:2rem;
+}
+
+.glass-card{
+	background: var(--card);
+	border-radius: 20px;
+	padding: 2rem;
+	box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+	backdrop-filter: blur(6px) saturate(120%);
+	border: 1px solid rgba(255,255,255,0.04);
+}
+
+.small-muted{color:rgba(230,238,248,0.7);font-size:0.95rem}

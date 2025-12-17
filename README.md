@@ -14,3 +14,22 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Deployment
+
+Recommended (easy): Vercel
+
+1. Push your repo to GitHub.
+2. Go to https://vercel.com and sign in with GitHub.
+3. Import Project → select `divyamjha029/codeease-session`.
+4. Vercel auto-detects Vite. Build command: `npm run build`. Output directory: `dist`.
+5. Deploy — each push to `main` will create a new deployment.
+
+Alternative: Netlify or GitHub Pages — build locally with `npm run build` and publish the `dist` folder.
+
+Local preview:
+```
+npm install
+npm run build
+npm run preview
+```
